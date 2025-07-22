@@ -285,7 +285,14 @@ h1, h2, h3 {
   }
 }
 
+/* Estilos para móviles */
 @media (max-width: 600px) {
+  body {
+    background-size: cover;
+    background-position: top center;
+    overflow-x: hidden;
+  }
+
   button[onclick] {
     bottom: 10px;
     right: 10px;
@@ -294,12 +301,6 @@ h1, h2, h3 {
     background-color: #e7b9b9;
     color: #5a3e36;
     z-index: 9999;
-  }
-
-  body {
-    background-size: cover;
-    background-position: top center;
-    overflow-x: hidden;
   }
 
   .portada img {
@@ -351,6 +352,22 @@ h1, h2, h3 {
     font-size: 12px;
   }
 
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  h4 {
+    font-size: 13px;
+  }
+
   section {
     padding: 15px;
     margin: 20px auto;
@@ -373,29 +390,5 @@ h1, h2, h3 {
 
   .musica img {
     max-width: 60px;
-  }
-
-  /* ↓↓↓ NUEVO: textos más pequeños en móviles ↓↓↓ */
-  h2 {
-    font-size: 18px;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
-
-  h4 {
-    font-size: 15px;
-  }
-
-  p {
-    font-size: 14px;
-    line-height: 1.4;
-  }
-
-  .contenido-contador h2,
-  .contenido-contador h3,
-  .contenido-contador p {
-    word-wrap: break-word;
   }
 }
