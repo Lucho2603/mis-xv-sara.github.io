@@ -374,4 +374,28 @@ h1, h2, h3 {
   .musica img {
     max-width: 60px;
   }
+
+  /* ↓↓↓ NUEVO: textos más pequeños en móviles ↓↓↓ */
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .contenido-contador h2,
+  .contenido-contador h3,
+  .contenido-contador p {
+    word-wrap: break-word;
+  }
 }
