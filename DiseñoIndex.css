@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Georgia', serif;
@@ -28,7 +32,6 @@ body {
   margin: 30px auto;
   display: block;
 }
-
 
 .petalos-container {
   position: fixed;
@@ -178,54 +181,6 @@ h1, h2, h3 {
   box-shadow: none;
 }
 
-/* Responsividad */
-@media (max-width: 600px) {
-  button[onclick] {
-    bottom: 10px;
-    right: 10px;
-    font-size: 13px;
-    padding: 8px 12px;
-    background-color: #e7b9b9;
-    color: #5a3e36;
-    z-index: 9999;
-  }
-
-  body {
-    background-size: cover;
-    background-position: center;
-  }
-  .portada img {
-    width: 80%;
-    height: auto;
-  }
-  .contenido-contador {
-    padding: 10px;
-  }
-  .tabla-contador {
-    height: auto;
-    background-size: cover;
-  }
-  section {
-    padding: 15px;
-    margin: 20px auto;
-  }
-  .galeria .imagenes {
-    flex-direction: column;
-    align-items: center;
-  }
-  .mensaje-final {
-    max-width: 90%;
-    height: auto;
-  }
-  .boton {
-    padding: 8px 14px;
-    font-size: 14px;
-  }
-  .musica img {
-    max-width: 60px;
-  }
-}
-
 .recepcion-was-lluvia-de-sobre {
   display: flex;
   justify-content: center;
@@ -305,7 +260,6 @@ h1, h2, h3 {
   border-radius: 12px;
 }
 
-/*Petalos*/
 .petalos-container::before {
   content: '';
   position: fixed;
@@ -328,5 +282,96 @@ h1, h2, h3 {
   }
   100% {
     background-position: 0 100vh;
+  }
+}
+
+@media (max-width: 600px) {
+  button[onclick] {
+    bottom: 10px;
+    right: 10px;
+    font-size: 13px;
+    padding: 8px 12px;
+    background-color: #e7b9b9;
+    color: #5a3e36;
+    z-index: 9999;
+  }
+
+  body {
+    background-size: cover;
+    background-position: top center;
+    overflow-x: hidden;
+  }
+
+  .portada img {
+    width: 80%;
+    height: auto;
+  }
+
+  .foto-sara img {
+    width: 90%;
+    max-width: 95%;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .tabla-invitacion-contador {
+    padding: 0 10px;
+  }
+
+  .tabla-contador {
+    height: auto;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+  }
+
+  .tabla-contador td {
+    padding: 10px;
+  }
+
+  .contenido-contador {
+    padding: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contenido-contador h2 {
+    font-size: 16px;
+  }
+
+  .contenido-contador h3 {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  .contenido-contador p,
+  .cuenta-regresiva {
+    font-size: 12px;
+  }
+
+  section {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .galeria .imagenes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mensaje-final {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .boton {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  .musica img {
+    max-width: 60px;
   }
 }
