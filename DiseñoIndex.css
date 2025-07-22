@@ -287,36 +287,42 @@ h1, h2, h3 {
 
 /* Estilos para móviles */
 @media (max-width: 600px) {
-  .contenido-contador h2 {
-    font-size: 10px; /* Aumentamos un poco el título para que destaque */
-    margin-bottom: 5px; /* Espacio debajo del título */
-  }
-
-  .contenido-contador h3 {
-    font-size: 5px;  /* Más pequeño el texto del mensaje */
-    line-height: 1.4;
-    font-weight: normal;
-  }
-
-  .contenido-contador p {
-    font-size: 10px; /* Tamaño del texto del contador */
-  }
-
-  .cuenta-regresiva {
-    font-size: 13px;
-  }
-
-  .contenido-contador {
-    padding: 12px;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
   .tabla-contador {
-    padding: 10px;
+    height: auto;
+    aspect-ratio: 3 / 2;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .contenido-contador {
+    max-width: 80%;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.4;
+    box-sizing: border-box;
+  }
+
+  .contenido-contador h2 {
+    font-size: 16px;
+    margin: 6px 0;
+  }
+
+  .contenido-contador h3 {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 6px 0;
+  }
+
+  .contenido-contador p,
+  .cuenta-regresiva {
+    font-size: 12px;
+    margin: 4px 0;
   }
 
   .tabla-contador td {
