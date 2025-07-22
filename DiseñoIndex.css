@@ -288,18 +288,18 @@ h1, h2, h3 {
 /* Estilos para móviles */
 @media (max-width: 600px) {
   .contenido-contador h2 {
-    font-size: 18px; /* Aumentamos un poco el título para que destaque */
-    margin-bottom: 8px; /* Espacio debajo del título */
+    font-size: 16px; /* Aumentamos un poco el título para que destaque */
+    margin-bottom: 5px; /* Espacio debajo del título */
   }
 
   .contenido-contador h3 {
-    font-size: 13px;  /* Más pequeño el texto del mensaje */
+    font-size: 10px;  /* Más pequeño el texto del mensaje */
     line-height: 1.4;
     font-weight: normal;
   }
 
   .contenido-contador p {
-    font-size: 12px; /* Tamaño del texto del contador */
+    font-size: 10px; /* Tamaño del texto del contador */
   }
 
   .cuenta-regresiva {
